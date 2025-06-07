@@ -1,0 +1,131 @@
+JFDML JFormDesigner: "8.2.4.0.393" Java: "21.0.7" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :42:42:p, comp test:::p::p, space :::p, comp panel1:::p::p, space ::72:x}, seq l {space :p:69:p, par t:::p {seq t {comp jLabel2:::p::p, space :::x, comp precioTotal:::p:97:p}, seq l {comp jLabel1:::p::p, space :p:34:p, comp consumoTotal:::p:97:p}, seq l {comp jLabel3:::p::p, space s:::p, comp consumoVane:::p:97:p}, seq t {comp jLabel4:::p::p, space :::x, comp potenciaTotal:::p:97:p}}, space :::x, par l:::p {seq l {comp jLabel6:::p::p, space :::x, comp impuestoElect:::p:97:p}, seq l {comp jLabel7:::p::p, space :::x, comp bonoSocial:::p:97:p}, seq l {comp jLabel8:::p::p, space :::x, comp alquiler:::p:97:p}, comp calcular:::p:241:p}, space :p:71:p}}"
+			"$verticalGroup": "par l {seq l {space :::x, comp test:::p::p, space :p:43:p}, seq t {space :p:17:p, par l {seq l {par b {comp jLabel6::b:p::p, comp impuestoElect::b:p:40:p}, space :p:27:p, par b {comp jLabel7::b:p::p, comp bonoSocial::b:p:40:p}, space :p:27:p, par b {comp jLabel8::b:p::p, comp alquiler::b:p:40:p}}, seq l {space :201:201:p, comp calcular:::p::p}, seq l {space :p:67:p, par b {comp jLabel3::b:p::p, comp consumoVane::b:p:40:p}, space :p:27:p, par b {comp potenciaTotal::b:p:40:p, comp jLabel4::b:p::p}}, seq l {par b {comp jLabel1::b:p::p, comp consumoTotal::b:p:40:p}, space :p:161:p, par b {comp precioTotal::b:p:40:p, comp jLabel2::b:p::p}}}, space ::38:x, comp panel1:::p::p, space :p:15:p}}"
+		} ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"cursor": new java.awt.Cursor( 0 )
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"text": "Consumo total: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "consumoTotal"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "consumoTotalActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "precioTotal"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "precioTotalActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel2"
+				"text": "Precio total: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "consumoVane"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "consumoVaneActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel3"
+				"text": "Consumo Vanesa: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "potenciaTotal"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "potenciaTotalActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel4"
+				"text": "Potencia total: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "impuestoElect"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "impuestoElectActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel6"
+				"text": "Impuesto electricidad:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "bonoSocial"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "bonoSocialActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel7"
+				"text": "Bono social:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "alquiler"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "alquilerActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel8"
+				"text": "Alquiler:"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "calcular"
+				"text": "CALCULAR"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "calcularActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "test"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :::p, par l {seq l {comp jLabel5:::p::p, space :::p, comp lblConsumoTotal:::p::p, space :p:24:p, comp jLabel11:::p::p, space :::p, comp lblPrecioTotal:::p::p, space :p:30:p, comp jLabel13:::p::p, space :::p, comp lblIva:::p::p, space :p:30:p, comp jLabel15:::p::p, space :::p, comp lblTotalMasIva:::p::p, space :0:65:x}, comp jLabel9:::::x}, space :::p}}"
+				"$verticalGroup": "par l {seq t {space :::p, comp jLabel9:::p::p, space s:::p, par b {comp jLabel5::b:p::p, comp lblConsumoTotal::b:p::p, comp jLabel11::b:p::p, comp lblPrecioTotal::b:p::p, comp jLabel13::b:p::p, comp lblIva::b:p::p, comp jLabel15::b:p::p, comp lblTotalMasIva::b:p::p}, space ::544:x}}"
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel9"
+					"background": new java.awt.Color( 51, 51, 255, 255 )
+					"font": new java.awt.Font( "sansserif", 1, 24 )
+					"horizontalAlignment": 0
+					"text": "RESUMEN"
+					"opaque": true
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel5"
+					"text": "Consumo total:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblConsumoTotal"
+					"font": new java.awt.Font( "sansserif", 1, 13 )
+					"text": "jLabel10"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel11"
+					"text": "Precio total:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblPrecioTotal"
+					"font": new java.awt.Font( "sansserif", 1, 13 )
+					"text": "jLabel12"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel13"
+					"text": "IVA:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblIva"
+					"font": new java.awt.Font( "sansserif", 1, 13 )
+					"text": "jLabel14"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "jLabel15"
+					"text": "TOTAL:"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lblTotalMasIva"
+					"font": new java.awt.Font( "sansserif", 1, 13 )
+					"text": "jLabel16"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) )
+	}
+}
